@@ -79,3 +79,53 @@ let valueInString = String(numb)
 console.log(typeof(valueInString)) //string
 console.log(valueInString) //12
 //therefore the value of valueInString is number only but type is changed to string
+
+
+
+//*************OPERATIONS***************
+
+let value = 3
+let negValue = -value
+console.log(negValue) //-3
+
+//Basic Maths Operations
+console.log(2+2) //4
+console.log(2-2) //0
+console.log(2*2) //4
+console.log(3**2) //9(it means 3 raise-to-the-power 2)
+console.log(3/2) //1.5
+console.log(3%2) //1
+
+let str1 = "Hello"
+let str2 = " Hiteshi"
+let str3 = str1 + str2 //we can join 2 strings like that
+console.log(str3) //Hello Hiteshi
+
+//Complex Situations
+console.log("1" + 2) //12
+console.log(1 + "2") //12
+console.log("1" + "2") //12
+console.log("1"+ 2 + 2) //122
+console.log(1 + 2 + "2") //32
+console.log(1 + "2" + 2) //122
+
+console.log( 3 + 4 * 5 % 6 ) //5(you will get the output here but writing code like this is not a good practice....USE PARENTHESIS!!)
+
+//Tricky Conversions
+console.log(true) //true
+console.log(+true) //1(Because "true" is itself a boolean and is converted due to increment done here)
+//console.log(true+) it gives an error here
+console.log(+"") //0(Its because ""=> false and is converted into 0 due to increment.)
+
+
+let num1, num2, num3
+num1=num2=num3=2+2 //writing such things is a bad practice though but its possible
+
+
+let gameCounter = 100
+gameCounter++ //postfix
+console.log(gameCounter)//101
+
+let gameCounter1 = 100
+++gameCounter1 //prefix
+console.log(gameCounter1) //101
