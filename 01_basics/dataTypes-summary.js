@@ -44,4 +44,27 @@ const bigNumber = 3627237791283723663713681273263n
  console.log(typeof myFunction) //function
  console.log(typeof myObj) //object
  console.log(typeof id2) //symbol
- 
+
+
+ // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ //MEMORY
+ //Memories are of two types - Stack(used to store primitive datatype) and Heap(used to store non-primitive datatype)
+ //whenever stack memory is declared it means you will get a copy of whatever variable you have declared whereas when a heap memory is declared you get the reference of the original value.
+
+ let myName = "Hiteshi" //as we know its primitive datatype thereby it will go to stack
+ let anotherName = myName
+ anotherName = "Yadav"
+ console.log(anotherName) //Yadav
+ console.log(myName) //Hiteshi
+ //therefore original value doesnt change only the copy changes
+
+ let user1 = {            
+   email : "user@gmail.com",
+   upi : "user@fbi"
+ }      //all of this goes to heap memory as reference not as a copy
+ let user2 = user1
+ user2.email = "hiteshi@google" //redefining email for user 2
+ console.log(user1.email) //hiteshi@google
+ console.log(user2.email) //hiteshi@google
+ //therefore change of data for any of the user makes change for both as they are equal and has heap memory therefore they have same reference(all the changes made are in the original value only)
