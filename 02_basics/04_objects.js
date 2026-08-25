@@ -58,3 +58,32 @@ console.log(Object.values(tinderUser))//[ '123abc', 'Sammy', false ]
 console.log(Object.entries(tinderUser))//[ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]  (this one gives array inside an array of key vakue pair)
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))//true
+
+
+//De-structuring of objects
+const course = {
+    courseName : "JS in Hindi",
+    price : "999",
+    courseInstructor : "hitesh"
+}
+//instead of doing console.log(course.courseInstructor), we can also extract any value using the following method
+const {courseInstructor} = course // const {whatToExtract} = fromWhereToExtract
+console.log(courseInstructor);//hitesh
+//we can also give new name to the value that is to be extracted
+const {courseInstructor : instructor} = course
+console.log(instructor)//hitesh (here, instructor is the new name give to courseInstructor)
+
+
+//JSON API INTRO
+       //APIs in form of object(key and value botyh are string only)
+//{
+//  "name" : "hiteshi",
+//  "courseName" : "JS in Hindi",
+//  "price" : "free"
+//}
+      //APIs in form of arrays
+//[
+// {},
+// {},
+// {}
+//]    
